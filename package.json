@@ -1,5 +1,5 @@
 {
-  "name": "mdast-util-to-hast",
+  "name": "@craftzdog/mdast-util-to-hast",
   "version": "3.0.2",
   "description": "Transform MDAST to HAST",
   "license": "MIT",
