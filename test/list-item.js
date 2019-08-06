@@ -47,7 +47,12 @@ test('ListItem', function(t) {
         'element',
         {
           tagName: 'input',
-          properties: {type: 'checkbox', checked: true, disabled: true}
+          properties: {
+            type: 'checkbox',
+            checked: true,
+            disabled: true,
+            line: undefined
+          }
         },
         []
       ),
@@ -71,7 +76,12 @@ test('ListItem', function(t) {
           'element',
           {
             tagName: 'input',
-            properties: {type: 'checkbox', checked: false, disabled: true}
+            properties: {
+              type: 'checkbox',
+              checked: false,
+              disabled: true,
+              line: undefined
+            }
           },
           []
         ),
@@ -92,7 +102,12 @@ test('ListItem', function(t) {
         'element',
         {
           tagName: 'input',
-          properties: {type: 'checkbox', checked: true, disabled: true}
+          properties: {
+            type: 'checkbox',
+            checked: true,
+            disabled: true,
+            line: undefined
+          }
         },
         []
       )
@@ -114,7 +129,12 @@ test('ListItem', function(t) {
           'element',
           {
             tagName: 'input',
-            properties: {type: 'checkbox', checked: false, disabled: true}
+            properties: {
+              type: 'checkbox',
+              checked: false,
+              disabled: true,
+              line: undefined
+            }
           },
           []
         )
@@ -145,7 +165,12 @@ test('ListItem', function(t) {
         'element',
         {
           tagName: 'input',
-          properties: {type: 'checkbox', checked: true, disabled: true}
+          properties: {
+            type: 'checkbox',
+            checked: true,
+            disabled: true,
+            line: undefined
+          }
         },
         []
       )
