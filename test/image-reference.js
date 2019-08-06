@@ -66,5 +66,31 @@ test('ImageReference', function(t) {
     'should transform `imageReference`s to `img`s'
   )
 
+  t.deepEqual(
+    to(
+      u('paragraph', [
+        u('imageReference', {identifier: 'november', alt: 'oscar'}),
+        u('definition', {identifier: 'november', url: ''})
+      ])
+    ),
+    u('element', {tagName: 'p', properties: {}}, [
+      u('element', {tagName: 'img', properties: {src: '', alt: 'oscar'}}, [])
+    ]),
+    'should transform `imageReference`s with an empty defined url to `img`s'
+  )
+
+  t.deepEqual(
+    to(
+      u('imageReference', {
+        identifier: 'tango',
+        label: 'Tango',
+        referenceType: 'full',
+        alt: 'uniform'
+      })
+    ),
+    u('text', '![uniform][Tango]'),
+    'should fall back on the label on a full `imageReference` (GH-22)'
+  )
+
   t.end()
 })
